@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <title>三板导航</title>
+	<link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/flexslider.css">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/result.css">
+	<link rel="stylesheet" href="./css/member.css">
+
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_466908_2izg2qkraiqkt9.css">
+
+    <!--[if lte IE 9]>  
+        <link rel="stylesheet" type="text/css" href="./css/styleAll-ie8.css">
+
+        <script src="./js/html5.js"></script>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        <div class="old-ie">
+            您的浏览器版本过低！为了使您在浏览本站时拥有更好的体验，推荐升级您的浏览器，或者使用 <a href="http://rj.baidu.com/soft/detail/14744.html" target="_blank">Chrome浏览器</a>、<a href="http://www.firefox.com.cn/" target="_blank">Firefox浏览器</a>。
+        </div>
+    <![endif]-->
+
+    <style>
+		.content-list-disc:hover {
+			border-color: #ddd;
+		}
+    </style>
+</head>
+<body>
+	<header id="header">
+        <div class="result-hade">
+	        <div class="result-search clearfix">
+	        	<a href="./index.html"><img class="logo" src="./img/u271.png" alt=""></a>
+	            <form class="form-box" action="">
+	                <div class="search-box member-search">
+	                    <div class="searchWarpper">
+	                        <input placeholder="请输入关键词搜索" class="search-text" type="text"/><input class="search-submit" type="submit" value="导航一下">
+	                    </div>
+	                    <ul class="search-list">
+	                        
+	                    </ul>
+	                </div>
+	            </form>
+	            <div class="userinfo clearfix">
+	            	<div class="user">
+	            		<span class="user_img"></span>
+	            		<span class="user_name">蔡万龙</span>
+	            	</div>
+	            	<ul class="head_menu claarfix">
+	            		<li><a href="##">退出</a> |
+	            		<a href="##">帮助</a></li>
+	            	</ul>
+	            </div>
+	        </div>
+	    </div>
+    </header>
+    <div class="fixed_head">
+        <div class="f_h_warpper">
+            <a class="fixed_head_logo" href="./index.html"><img src="./img/u271.png" alt=""></a>
+
+            <ul class="fixed_head_nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="nav_more.html">导航</a></li>
+                <li class="active"><a href="rankings_more.html">排行</a></li>
+                <li><a href="more.html">大咖会</a></li>
+                <li><a href="area_more.html">三板公司</a></li>
+                <li><a href="about.html">我们</a></li>
+            </ul>
+            
+            <form class="fixed_form" action=""><input class="search-text" placeholder="请输入关键词搜索" type="text"/><input class="search-submit" type="button" value=""></form>
+        </div>
+    </div>
+
+    <section class="nav_more_warpper">
+    	<div class="nav_more_container bgColor">
+	    	<div class="rankings_title">
+		    	<ul class="rankings_nav clearfix">
+		    		<li class="rankings_nav_list active">网站点击排行板</li>
+		    		<li class="rankings_nav_list">三板公司点击排行板</li>
+		    		<li class="rankings_nav_list last-child">投资公司点击排行板</li>
+					<span class="r_nav_bg"></span>
+		    	</ul>
+	    	</div>
+
+	    	<div class="rankings_more_warpper">
+	    		<ul class="rankings_item active">
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num top1"></span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name"><a href="">杭州鹿眼网络科技有限公司1</a></h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num top2">2</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name"><a href="">杭州鹿眼网络科技有限公司</a></h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num top3">3</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name"><a href="">杭州鹿眼网络科技有限公司</a></h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num">4</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name"><a href="">杭州鹿眼网络科技有限公司</a></h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num">5</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name"><a href="">杭州鹿眼网络科技有限公司</a></h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num">6</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name"><a href="">杭州鹿眼网络科技有限公司</a></h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num">7</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name"><a href="">杭州鹿眼网络科技有限公司</a></h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num">8</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name"><a href="">杭州鹿眼网络科技有限公司</a></h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num">9</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name"><a href="">杭州鹿眼网络科技有限公司</a></h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num">10</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name"><a href="">杭州鹿眼网络科技有限公司</a></h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<div class="loadingMore">加载更多>></div>
+	    		</ul>
+	    		<ul class="rankings_item">
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num top1"></span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name"><a href="">杭州鹿眼网络科技有限公司2</a></h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num top2">2</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name">杭州鹿眼网络科技有限公司</h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num top3">3</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name">杭州鹿眼网络科技有限公司</h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num">4</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name">杭州鹿眼网络科技有限公司</h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num">5</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name">杭州鹿眼网络科技有限公司</h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num">6</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name">杭州鹿眼网络科技有限公司</h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num">7</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name">杭州鹿眼网络科技有限公司</h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num">8</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name">杭州鹿眼网络科技有限公司</h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num">9</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name">杭州鹿眼网络科技有限公司</h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num">10</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name">杭州鹿眼网络科技有限公司</h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<div class="loadingMore">加载更多>></div>
+	    		</ul>
+	    		<ul class="rankings_item">
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num top1"></span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name">杭州鹿眼网络科技有限公司3</h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num top2">2</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name">杭州鹿眼网络科技有限公司</h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num top3">3</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name">杭州鹿眼网络科技有限公司</h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num">4</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name">杭州鹿眼网络科技有限公司</h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num">5</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name">杭州鹿眼网络科技有限公司</h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num">6</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name">杭州鹿眼网络科技有限公司</h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num">7</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name">杭州鹿眼网络科技有限公司</h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num">8</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name">杭州鹿眼网络科技有限公司</h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num">9</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name">杭州鹿眼网络科技有限公司</h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<li class="rankings_more_item">
+	    				<div class="rankings_more_item-warpper">
+	    					<span class="rankings_more_item-num">10</span>
+	    					<span class="rankings_more_item-logo">
+	    						<img src="./img/logo_luyan_03.png" alt="">
+	    					</span>
+	    					<div class="rankings_more_item-ctn">
+	    						<h4 class="rankings_more_item-name">杭州鹿眼网络科技有限公司</h4>
+	    						<p>简介：打造不一样的新三板服务平台，隆重上线鹿眼看看（www.61kankan.com）是互联网新三板首家</p>
+	    						<span class="rankings_more_item-read">22345</span>
+	    					</div>
+	    				</div>
+	    			</li>
+	    			<div class="loadingMore">加载更多>></div>
+	    		</ul>
+	    	</div>
+    	</div>
+    </section>
+
+
+    <div id="footer">
+    </div>
+
+    <script src="./js/jquery-1.11.3.js"></script>
+    <script src="./js/jquery.flexslider-min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/sortable.js"></script>
+    <script src="./js/member.js"></script>
+    <script>
+    	$(function(){
+    		$('#footer').load('./footer.html');
+    		$('.rankings_nav').delegate('li', 'click', function(even){
+    			$(this).addClass('active').siblings().removeClass('active');
+    			$('.rankings_item').eq($(this).index()).addClass('active').show().siblings().removeClass('active');
+    			var left = $(this).offset().left;
+    			var lf = $('.rankings_nav').offset().left;
+    			console.log(left);
+    			console.log(typeof left);
+    			$('.r_nav_bg').css({left:(left-lf)+'px'})
+    		});
+    	})
+    </script>
+</body>
+</html>

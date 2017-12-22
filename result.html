@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <title>三板导航</title>
+	<link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/flexslider.css">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/result.css">
+
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_466908_2izg2qkraiqkt9.css">
+
+    <!--[if lte IE 9]>  
+        <link rel="stylesheet" type="text/css" href="./css/styleAll-ie8.css">
+
+        <script src="./js/html5.js"></script>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        <div class="old-ie">
+            您的浏览器版本过低！为了使您在浏览本站时拥有更好的体验，推荐升级您的浏览器，或者使用 <a href="http://rj.baidu.com/soft/detail/14744.html" target="_blank">Chrome浏览器</a>、<a href="http://www.firefox.com.cn/" target="_blank">Firefox浏览器</a>。
+        </div>
+    <![endif]-->
+</head>
+<body>
+	<header id="header">
+        <div class="result-hade">
+	        <div class="result-search clearfix">
+	        	<a href="./index.html"><img class="logo" src="./img/u271.png" alt=""></a>
+	            <form class="form-box" action="">
+	                <div class="search-box">
+	                    <div class="searchWarpper">
+	                        <input placeholder="请输入关键词搜索" class="search-text" type="text"/><input class="search-submit" type="submit" value="导航一下">
+	                    </div>
+	                    <ul class="search-list">
+	                        
+	                    </ul>
+	                </div>
+	            </form>
+	            <div class="loginbox">
+	                <a class="login"> <span class="iconfont icon-denglu"></span>登录</a>
+	                <span class="login-line">|</span>
+	                <a class="weixin" href="##"> <span class="iconfont icon-weixin1"></span> 微信</a>
+	                <div class="menu">
+	                    <span class="iconfont icon-erweima2"></span>手机扫码进圈子
+	                    <div class="scanning-warpper">
+	                        <img src="./img/business_card.jpg" alt="">
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+    </header>
+    <div class="fixed_head">
+        <div class="f_h_warpper">
+            <a class="fixed_head_logo" href="./index.html"><img src="./img/u271.png" alt=""></a>
+
+            <ul class="fixed_head_nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="nav_more.html">导航</a></li>
+                <li><a href="rankings_more.html">排行</a></li>
+                <li><a href="more.html">大咖会</a></li>
+                <li><a href="area_more.html">三板公司</a></li>
+                <li><a href="about.html">我们</a></li>
+            </ul>
+            
+            <form class="fixed_form" action=""><input placeholder="请输入关键词搜索" class="search-text" type="text"/><input class="search-submit" type="button" value=""></form>
+        </div>
+    </div>
+
+    <!-- 登录窗口 -->
+    <div class="loginContainer">
+        <div class="mask"></div>
+        <div class="loginWarpper">
+            <!-- 账号密码登录 -->
+            <div class="loginWarpper-item passwordLogin active">
+                <div class="loginHead">
+                    <span class="login-logo"></span>
+                    <span class="hd-title">登录账号</span>
+                    <span class="close-btn"></span>
+                </div>
+                <form action="">
+                    <p class="logon"><span class="ff6900">立即注册</span></p>
+                    <label class="from-label" for="">
+                        <span class="iconfont icon-denglu"></span>
+                        <input class="userNameId" type="text" placeholder="手机号/邮箱">
+                        <p class="verif_msg"><span class="iconfont icon-shanchu"></span> <span class="err_msg"></span></p>
+                    </label>
+                    <label class="from-label" for="">
+                        <span class="iconfont icon-tubiao02"></span>
+                        <input class="userPwd" type="password" placeholder="密码" minlength="6" maxlength="16">
+                        <p class="verif_msg"><span class="iconfont icon-shanchu"></span> <span class="err_msg"></span></p>
+                    </label>
+                    <p class="forget_password"><span class="color999">忘记登录密码?</span></p>
+                    <button class="login-btn" type="submit">登录</button>
+                    <div class="treaty clearfix">
+                        <label class="treaty-label" for="treaty">
+                            <input type="checkbox" checked="true" id="treaty">
+                            <p>阅读并接受<span class="ff6900">《三板导航协议》</span></a></p>
+                        </label>
+                        <p class="phone-login"><span class="ff6900"><i class="iconfont icon-shouji"></i>短信登录</span></p>
+                    </div>
+                    <div class="other-login">
+                        <div class="other-word">
+                            <p class="line"></p>
+                            <p class="other-login-title">其他登录方式</p>       
+                        </div>
+                        <div class="weixin-login">
+                            <span class="weixin-login-icon"></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- 手机登录 -->
+            <div class="loginWarpper-item mobileLogin">
+                <div class="loginHead">
+                    <span class="login-logo"></span>
+                    <span class="hd-title">登录账号</span>
+                    <span class="close-btn"></span>
+                </div>
+                <form action="">
+                    <p class="msg-txt-1">短信登录</p>
+                    <p class="msg-txt-2">验证即登录，未注册将自动创建账号</p>
+                    <label class="from-label" for="">
+                        <span class="iconfont icon-shouji"></span>
+                        <input class="userPhone" type="text" placeholder="请输入手机号" maxlength="11">
+                        <p class="verif_msg"><span class="iconfont icon-shanchu"></span> <span class="err_msg"></span></p>
+                    </label>
+                    <div class="code-box clearfix">
+                        <input class="phonekey code input" type="text" placeholder="请输入验证码" maxlength="4">
+                        <button type="button" class="get-code get2">发送验证码</button>
+                        <p class="verif_msg"><span class="iconfont icon-shanchu"></span> <span class="err_msg"></span></p>
+                    </div>
+                    <button class="login-btn" type="submit">登录</button>
+                    <div class="treaty clearfix">
+                        <label class="treaty-label" for="treaty">
+                            <input type="checkbox" id="treaty">
+                            <p>阅读并接受<span class="ff6900">《三板导航协议》</span></a></p>
+                        </label>
+                        <p class="pass-login"><span class="ff6900">账号密码登录</span></p>
+                    </div>
+                    <div class="other-login">
+                        <div class="other-word">
+                            <p class="line"></p>
+                            <p class="other-login-title">其他登录方式</p>       
+                        </div>
+                        <div class="weixin-login">
+                            <span class="weixin-login-icon"></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- 更改密码 -->
+            <div class="loginWarpper-item changePwd">
+                <div class="loginHead">
+                    <span class="login-logo"></span>
+                    <span class="hd-title">账号重置</span>
+                    <span class="close-btn"></span>
+                </div>
+                <form action="">
+                	<label class="from-label" for="">
+                        <span class="iconfont icon-denglu"></span>
+                        <input class="userNameId" type="text" placeholder="请输入你需要找回登录密码的账户名">
+                        <p class="verif_msg"><span class="iconfont icon-shanchu"></span> <span class="err_msg"></span></p>
+                    </label>
+                	<label class="from-label" for="">
+                        <span class="iconfont icon-shouji"></span>
+                        <input class="userPhone" type="text" placeholder="请输入手机号" maxlength="11">
+                        <p class="verif_msg"><span class="iconfont icon-shanchu"></span> <span class="err_msg"></span></p>
+                    </label>
+                    <div class="code-box clearfix">
+                        <input class="phonekey code input" type="text" placeholder="请输入验证码" maxlength="4">
+                        <button type="button" class="get-code get2">发送验证码</button>
+                        <p class="verif_msg"><span class="iconfont icon-shanchu"></span> <span class="err_msg"></span></p>
+                    </div>
+                    <label class="from-label" for="">
+                        <span class="iconfont icon-tubiao02"></span>
+                        <input class="userPwd" type="password" placeholder="请输入6-16位密码" minlength="6" maxlength="16">
+                        <p class="verif_msg"><span class="iconfont icon-shanchu"></span> <span class="err_msg"></span></p>
+                    </label>
+                    <button class="login-btn" type="submit">立即重置</button>
+                    <div class="treaty clearfix">
+                        <p class="pass-login"><span class="ff6900">账号密码登录</span></p>
+                    </div>
+                </form>
+            </div>
+            <!-- 注册 -->
+            <div class="loginWarpper-item registerWarpper">
+                <div class="loginHead">
+                    <span class="login-logo"></span>
+                    <span class="hd-title">注册账号</span>
+                    <span class="close-btn"></span>
+                </div>
+                <form action="">
+                    <label class="from-label" for="">
+                        <span class="iconfont icon-denglu"></span>
+                        <input class="userNameId" type="text" placeholder="用户名">
+                        <p class="verif_msg"><span class="iconfont icon-shanchu"></span> <span class="err_msg"></span></p>
+                    </label>
+                    <label class="from-label" for="">
+                        <span class="iconfont icon-shouji"></span>
+                        <input class="userPhone" type="text" placeholder="请输入手机号" maxlength="11">
+                        <p class="verif_msg"><span class="iconfont icon-shanchu"></span> <span class="err_msg"></span></p>
+                    </label>
+                    <div class="code-box clearfix">
+                        <input class="phonekey code input" type="text" placeholder="请输入验证码" maxlength="4">
+                        <button type="button" class="get-code get1">发送验证码</button>
+                        <p class="verif_msg"><span class="iconfont icon-shanchu"></span> <span class="err_msg"></span></p>
+                    </div>
+                    <label class="from-label" for="">
+                        <span class="iconfont icon-tubiao02"></span>
+                        <input class="userPwd" type="password" placeholder="请输入6-16位密码" minlength="6" maxlength="16">
+                        <p class="verif_msg"><span class="iconfont icon-shanchu"></span> <span class="err_msg"></span></p>
+                    </label>
+                    <button class="login-btn" id="regBtn" type="submit">注册</button>
+                    <div class="treaty clearfix">
+                        <label class="treaty-label" for="treaty">
+                            <input type="checkbox" id="treaty">
+                            <p>阅读并接受<span class="ff6900">《三板导航协议》</span></a></p>
+                        </label>
+                        <p class="pass-login"><span class="ff6900">账号密码登录</span></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+		
+	<section id="section">
+		<div class="container">
+			<!--认证大咔-->
+            <div class="section-list clearfix">
+                <div class="list-right-warpper bgColor">
+                	<div class="websiteNav">
+                        <ul class="result_nav websiteNav-ie clearfix">
+                            <li class="active">全部</li>
+                            <li>资讯网站</li>
+                            <li>劵商</li>
+                            <li>数据平台</li>
+                            <li>路演平台</li>
+                            <li>公众号</li>
+                            <li>三板公司</li>
+                            <li>投资公司</li>
+                            <li>服务公司</li>
+                        </ul>
+                    </div>
+                    <p class="search-disc">导航君帮你为您找到了相关搜索<span>144,000</span>个</p>
+                    <ul class="result-warpper">
+                    	<li class="result-warpper-item active">
+                    		<ul class="result-list">
+                    			<li class="result-item">
+	                    			<div class="result-item-warpper clearfix">
+	                    				<div class="result-item-logo">
+	                    					<img src="./img/searcg-logo.png" alt="">
+	                    				</div>
+	                    				<div class="result-item-disc">
+	                    					<div class="item-title">
+	                    						<h2>上海新三体企业发展有限公司 <span class="auth-icon"></span></h2>
+	                    						<p class="search-hot">搜索热度：<span class="num">910.1</span></p>
+	                    					</div>
+	                    					<div class="item-ad"><span class="iconfont icon-gongsi"> 服务机构/上海市</div>
+	                    					<div class="item-web">
+	                    						<span class="iconfont icon-wangzhan"></span>
+	                    						<a href="http://www.newtio.com">www.newtio.com</a>
+	                    						<span class="item-top100">同行100强</span>
+	                    					</div>
+	                    					<ul class="item-tag">
+	                    						<li>TMT</li>
+	                    						<li>医疗科技</li>
+	                    						<li>新零售</li>
+	                    					</ul>
+	                    					<div class="item-icon-list">
+	                    						<span class="user-icon-2"></span>
+	                    						<span class="phone-icon"></span>
+	                    					</div>
+	                    				</div>
+	                    			</div>
+	                    		</li>
+                                <li class="result-item">
+                                    <div class="result-item-warpper clearfix">
+                                        <div class="result-item-logo">
+                                            <img src="./img/searcg-logo.png" alt="">
+                                        </div>
+                                        <div class="result-item-disc">
+                                            <div class="item-title">
+                                                <h2>上海新三体企业发展有限公司 <span class="auth-icon"></span></h2>
+                                                <p class="search-hot">搜索热度：<span class="num">910.1</span></p>
+                                            </div>
+                                            <div class="item-ad"><span class="iconfont icon-gongsi"> 服务机构/上海市</div>
+                                            <div class="item-web">
+                                                <span class="iconfont icon-wangzhan"></span>
+                                                <a href="http://www.newtio.com">www.newtio.com</a>
+                                                <span class="item-top100">同行100强</span>
+                                            </div>
+                                            <ul class="item-tag">
+                                                <li>TMT</li>
+                                                <li>医疗科技</li>
+                                                <li>新零售</li>
+                                            </ul>
+                                            <div class="item-icon-list">
+                                                <span class="user-icon-2"></span>
+                                                <span class="phone-icon"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="result-item">
+                                    <div class="result-item-warpper clearfix">
+                                        <div class="result-item-logo">
+                                            <img src="./img/searcg-logo.png" alt="">
+                                        </div>
+                                        <div class="result-item-disc">
+                                            <div class="item-title">
+                                                <h2>上海新三体企业发展有限公司 <span class="auth-icon"></span></h2>
+                                                <p class="search-hot">搜索热度：<span class="num">910.1</span></p>
+                                            </div>
+                                            <div class="item-ad"><span class="iconfont icon-gongsi"> 服务机构/上海市</div>
+                                            <div class="item-web">
+                                                <span class="iconfont icon-wangzhan"></span>
+                                                <a href="http://www.newtio.com">www.newtio.com</a>
+                                                <span class="item-top100">同行100强</span>
+                                            </div>
+                                            <ul class="item-tag">
+                                                <li>TMT</li>
+                                                <li>医疗科技</li>
+                                                <li>新零售</li>
+                                            </ul>
+                                            <div class="item-icon-list">
+                                                <span class="user-icon-2"></span>
+                                                <span class="phone-icon"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                    		</ul>
+                    		<div id="page1" class="page_div"></div>
+                    	</li>
+                    	<li class="result-warpper-item">
+                    		<ul class="result-list"></ul>
+                    		<div id="page2" class="page_div"></div>
+                    	</li>
+                    	<li class="result-warpper-item">
+                    		<ul class="result-list"></ul>
+                    		<div id="page3" class="page_div"></div>
+                    	</li>
+                    	<li class="result-warpper-item">
+                    		<ul class="result-list"></ul>
+                    		<div id="page4" class="page_div"></div>
+                    	</li>
+                    	<li class="result-warpper-item">
+                    		<ul class="result-list"></ul>
+                    		<div id="page5" class="page_div"></div>
+                    	</li>
+                    	<li class="result-warpper-item">
+                    		<ul class="result-list"></ul>
+                    		<div id="page6" class="page_div"></div>
+                    	</li>
+                    	<li class="result-warpper-item">
+                    		<ul class="result-list"></ul>
+                    		<div id="page7" class="page_div"></div>
+                    	</li>
+                    	<li class="result-warpper-item">
+                    		<ul class="result-list"></ul>
+                    		<div id="page8" class="page_div"></div>
+                    	</li>
+                    	<li class="result-warpper-item">
+                    		<ul class="result-list"></ul>
+                    		<div id="page9" class="page_div"></div>
+                    	</li>
+                    </ul>
+                </div>
+                <div class="list-left-warpper">
+                	<div class="adv-warpper">
+                        <div class="adv-banner">
+                            <ul class="slides clearfix">
+                                <li>
+                                    <a href="##">
+                                        <img src="./img/test-img9.png" alt="">
+                                        <h2>新三板突破20000家公司数量</h2>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="##">
+                                        <img src="./img/test-img9.png" alt="">
+                                        <h2>这里是标题这里是标题</h2>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="adv-list">
+                            <ul>
+                                <li><a href="##">新三板突破20000家公司数量</a></li>
+                                <li><a href="##">新三板突破20000家公司数量</a></li>
+                                <li><a href="##">新三板突破20000家公司数量</a></li>
+                                <li><a href="##">新三板突破20000家公司数量</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                	<div class="list-head bgColor">
+                        <span class="list-head-title"><i class="renzhen-icon"></i>认证大咖</span>
+                        <a class="list-head-more" href="##">更多>></a>
+                    </div>
+                    <div class="auth-container bgColor">
+                        <ul class="slides">
+                            <li class="auth-list active">
+                                <ul>
+                                    <li>
+                                        <div class="auth-content">
+                                            <div class="auth-hd-img"><img src="./img/hd.png" alt=""></div>
+                                            <div class="auth-disc">
+                                                <h4>唐勇 <span class="auth-icon"></span></h4>
+                                                <p>新三体创始人</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="auth-content">
+                                            <div class="auth-hd-img"><img src="./img/hd.png" alt=""></div>
+                                            <div class="auth-disc">
+                                                <h4>唐勇 <span class="auth-icon"></span></h4>
+                                                <p>新三体创始人</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="auth-content">
+                                            <div class="auth-hd-img"><img src="./img/hd.png" alt=""></div>
+                                            <div class="auth-disc">
+                                                <h4>唐勇 <span class="auth-icon"></span></h4>
+                                                <p>新三体创始人</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="auth-content">
+                                            <div class="auth-hd-img"><img src="./img/hd.png" alt=""></div>
+                                            <div class="auth-disc">
+                                                <h4>唐勇 <span class="auth-icon"></span></h4>
+                                                <p>新三体创始人</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="auth-content">
+                                            <div class="auth-hd-img"><img src="./img/hd.png" alt=""></div>
+                                            <div class="auth-disc">
+                                                <h4>唐勇 <span class="auth-icon"></span></h4>
+                                                <p>新三体创始人</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- 。。。。。。。。 -->
+                            </li>
+                            <li class="auth-list">
+                                <ul>
+                                    <li>
+                                        <div class="auth-content">
+                                            <div class="auth-hd-img"><img src="./img/hd.png" alt=""></div>
+                                            <div class="auth-disc">
+                                                <h4>唐勇 <span class="auth-icon"></span></h4>
+                                                <p>新三体创始人</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="auth-content">
+                                            <div class="auth-hd-img"><img src="./img/hd.png" alt=""></div>
+                                            <div class="auth-disc">
+                                                <h4>唐勇 <span class="auth-icon"></span></h4>
+                                                <p>新三体创始人</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="auth-content">
+                                            <div class="auth-hd-img"><img src="./img/hd.png" alt=""></div>
+                                            <div class="auth-disc">
+                                                <h4>唐勇 <span class="auth-icon"></span></h4>
+                                                <p>新三体创始人</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="auth-content">
+                                            <div class="auth-hd-img"><img src="./img/hd.png" alt=""></div>
+                                            <div class="auth-disc">
+                                                <h4>唐勇 <span class="auth-icon"></span></h4>
+                                                <p>新三体创始人</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="auth-content">
+                                            <div class="auth-hd-img"><img src="./img/hd.png" alt=""></div>
+                                            <div class="auth-disc">
+                                                <h4>唐勇 <span class="auth-icon"></span></h4>
+                                                <p>新三体创始人</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</section>
+
+	<div id="footer">
+    </div>
+	
+	<script src="./js/jquery-1.11.3.js"></script>
+	<script src="js/jquery.pagination.min.js"></script>
+	<script>
+    $(function(){
+        $('#footer').load('./footer.html');
+
+		ajaxTest(1);
+		
+		function ajaxTest(num) {
+			$.ajax({
+				url: "./js/table.json",
+				type: "get",
+				data: {},
+				dataType: "json",
+				success: function(data) {
+					var totalPage = Math.ceil(data.list.length/10);
+					var totalSize = data.list.length;
+					data = eval(data.list);
+					var html='';
+					var arr=[];
+					var arrvalue=[];//用于存放取出的数组的值
+					$.each(data, function (index, item) {
+						var item_web = data[index].item_web;
+						var item_top100 = data[index].item_top100;
+						var item_tag = data[index].item_tag;
+						var item_icon_list = data[index].item_icon_list;
+		
+						arr.push(
+							'<li class="result-item">'+
+                    			'<div class="result-item-warpper clearfix">'+
+                    				'<div class="result-item-logo">'+
+                    					'<a href="##"><img src="'+data[index].item_logo+'" alt=""></a>'+
+                    				'</div>'+
+                    				'<div class="result-item-disc">'+
+                    					'<div class="item-title">'+
+                    						'<h2>'+data[index].item_title+' <span class="auth-icon"></span></h2>'+
+                    						'<p class="search-hot">搜索热度：<span class="num">'+data[index].num+'</span></p>'+
+                    					'</div>'+
+                    					'<div class="item-ad"><span class="iconfont icon-gongsi"> '+data[index].item_ad+'</div>'+
+                    					'<div class="item-web">'+
+                    						'<span class="iconfont icon-wangzhan"></span> '+item_web+item_top100+
+                    					'</div>'+
+                    					'<ul class="item-tag">'+
+                    						'<li>'+item_tag[0]+'</li>'+
+                    						'<li>'+item_tag[1]+'</li>'+
+                    						'<li>'+item_tag[2]+'</li>'+
+                    					'</ul>'+
+                    					'<div class="item-icon-list">'+item_icon_list[0]+item_icon_list[1]+
+                    					'</div>'+
+                    				'</div>'+
+                    			'</div>'+
+                    		'</li>');
+					})
+					var a=(num-1)*10;
+					for(var i=a;i<num*10;i++){
+					    arrvalue.push(arr[i]);
+	                	$('.result-list').html(arrvalue);
+					}
+					$(".page_div").pagination({
+					   currentPage: num,// 当前页数
+					   totalPage: totalPage,// 总页数
+					   isShow: true,// 是否显示首尾页
+					   count: 7,// 显示个数
+					   homePageText: "首页",// 首页文本
+					   endPageText: "尾页",// 尾页文本
+					   prevPageText: "上一页",// 上一页文本
+					   nextPageText: "下一页",// 下一页文本
+					   callback: function(num) {
+					       // 回调,current(当前页数)
+					       	ajaxTest(num)
+							
+							$('body,html').animate({scrollTop:0},100);
+					   }
+					});
+				}
+			})
+		}
+    })
+	</script>
+	<script src="./js/jquery.flexslider-min.js"></script>
+	<script src="./js/common.js"></script>
+	<script src="./js/index.js"></script>
+
+</body>
+</html>
