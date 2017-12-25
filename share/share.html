@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" 
+    	  content="width=device-width,
+    	           initial-scale=1.0,
+    	           maximum-scale=1.0,
+    	           minimum-scale=1.0,
+    	           user-scalable=no">
+	<title>三板导航</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<style>
+		.porp_txt {
+			position: fixed;
+			top: 20px;
+			width: 200px;
+			height: 40px;
+			font-size: 20px;
+			color: #ff6900;
+			left: 50%;
+			margin-left: -100px;
+			text-align: center;
+			letter-spacing: 4px;
+		}
+	</style>
+</head>
+<body>
+	<div class="prompt_box"></div>
+	<div class="warp">
+		<img src="../img/share.jpg" width=100% alt="">
+	</div>
+
+	<script src="../js/jquery-1.11.3.js"></script>
+	<script>
+		$(function(){
+
+			function browserRedirect()  {
+			    var sUserAgent = navigator.userAgent.toLowerCase();
+			    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+			    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+			    var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+			    var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+			    var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+			    var bIsAndroid = sUserAgent.match(/android/i) == "android";
+			    var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+			    var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+			    if (!(bIsIpad || bIsMidp || bIsIphoneOs || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM)) {
+			    	var num=3;
+			        $('.warp').html(' ');
+			        $('body').append('<div class="porp_txt">'+num+'秒后返回主页</div>');
+			        _num();
+			        function _num(){
+			        	var timer = setInterval( function(){
+			        		num--;
+			        		$('.porp_txt').html(num+"秒后返回主页");
+			        		if(num===0){
+			        			clearInterval(timer);
+			        		}
+			        	},1000);
+			        }
+			        $('.prompt_box').html('<img src=\'../img/jingao.png\' width=100%/>').animate({ opacity: 1, width: '100px', height: '100px'}, 500, function(){
+			        	setTimeout( function(){window.location.href = "http://www.3bdh.com"},30000)
+			        });
+			    }
+			}
+			// browserRedirect()
+		})
+	</script>
+</body>
+</html>
