@@ -57,6 +57,7 @@ a {
     text-decoration: none;
     -webkit-backface-visibility: hidden;
     cursor:pointer;
+    -webkit-appearance: none;
 }
 a:hover {
     color:#FF6900!important;

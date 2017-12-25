@@ -2,14 +2,16 @@
 * @Author: Administrator
 * @Date:   2017-11-10 14:43:33
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-12-13 16:59:25
+* @Last Modified time: 2017-12-19 10:58:48
 */
 .member-info {
 	width:1162px;
 	height:215px;
 	color:#fff;
 	background:url('../img/meber_bg.png');
+	position: relative;
 }
+
 .member-center {
 	margin-top:10px;
 	width: 100%;
@@ -75,20 +77,45 @@
 	padding-left:38px;
 	position: relative;
 }
-.qiandao {
-	display: inline-block;
+.qiandao_box {
+	position: absolute;
+	right:50px;
+	top:88px;
 	width:150px;
 	height:38px;
+	
+}
+.qiandao {
+	display: inline-block;
+	width:100%;
+	height:100%;
 	background-color: #ff5200;
 	color:#fff;
 	outline: none;
 	border:none;
 	border-radius: 5px;
 	line-height: 38px;
-	position: absolute;
-	right:50px;
-	top:88px;
 	cursor: pointer;
+}
+.qiandao_effect {
+	position: absolute;
+	top:-10px;
+	left:50%;
+	margin-left:-30px;
+	width:60px;
+	height:20px;
+	line-height: 20px;
+	font-size:18px;
+	text-align: center;
+	opacity: 0;
+}
+.qiandao_effect i {
+	vertical-align: top;
+	width:20px;
+	height:26px;
+	background: url('../img/signed.png') no-repeat;
+	background-size: 100%;
+
 }
 .qiandao:hover {
 	background-color: #ff6900;

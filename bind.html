@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>三板导航</title>
+        <meta charset="utf-8">
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+        <link rel="shortcut icon" href="./img/favicon.ico">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/result.css">
+        <link href="./css/video-js.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="http://at.alicdn.com/t/font_466908_2izg2qkraiqkt9.css">
+
+        <link rel="stylesheet" type="text/css" href="./css/styleAll-ie8.css">
+        <!--[if lte IE 9]>  
+            <script src="./js/html5.js"></script>
+            <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+        <![endif]-->
+
+        <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?cb3cc521f9d93089d0cc91b69ea9ec2f";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+
+        <!--[if lt IE 9]>
+            <div class="old-ie">
+                您的浏览器版本过低！为了使您在浏览本站时拥有更好的体验，推荐升级您的浏览器，或者使用 <a href="http://rj.baidu.com/soft/detail/14744.html" target="_blank">Chrome浏览器</a>、<a href="http://www.firefox.com.cn/" target="_blank">Firefox浏览器</a>。
+            </div>
+        <![endif]-->
+
+    </head>
+    <body>
+        <div class="warp">
+            <header id="header">
+                <div class="result-hade">
+                    <div class="result-search clearfix">
+                        <a href="./index.html"><img class="logo" src="./img/u271.png" alt=""></a>
+                        <!-- <form class="form-box" action="">
+                            <div class="search-box">
+                                <div class="searchWarpper">
+                                    <input placeholder="请输入关键词搜索" class="search-text" type="text"/><input class="search-submit" type="submit" value="导航一下">
+                                </div>
+                                <ul class="search-list">
+                                    
+                                </ul>
+                            </div>
+                        </form> -->
+                        <span class="login_head"> | 账户绑定</span>
+                    </div>
+                </div>
+            </header>
+            <div class="bind_mian">
+                <div class="bind_mian_warpper">
+                    <!-- 绑定 -->
+                    <div class="loginWarpper-item bind_mobile">
+                        <div class="loginHead">
+                            <span class="login-logo"></span>
+                            <span class="hd-title">绑定手机号码</span>
+                        </div>
+                        <div class="login_avatar">
+                            <span class="login_avatar_warp">
+                                <img src="./img/1215162750.jpg" alt="">
+                            </span>
+                        </div>
+                        <form action="">
+                            <label class="from-label" for="">
+                                <span class="iconfont icon-shouji"></span>
+                                <input class="userPhone" type="text" placeholder="请输入手机号" maxlength="11">
+                                <p class="verif_msg"><span class="iconfont icon-shanchu"></span> <span class="err_msg"></span></p>
+                            </label>
+                            <div class="code-box clearfix">
+                                <input class="phonekey code input" type="text" placeholder="请输入验证码" maxlength="4">
+                                <button type="button" class="get-code get2">发送验证码</button>
+                                <p class="verif_msg"><span class="iconfont icon-shanchu"></span> <span class="err_msg"></span></p>
+                            </div>
+                            <label class="from-label" for="">
+                                <span class="iconfont icon-tubiao02"></span>
+                                <input class="userPwd" type="password" placeholder="请设定登录密码" minlength="6" maxlength="16">
+                                <p class="verif_msg"><span class="iconfont icon-shanchu"></span> <span class="err_msg"></span></p>
+                            </label>
+                            <label class="from-label" for="">
+                                <span class="iconfont icon-tubiao02"></span>
+                                <input class="userPwd" type="password" placeholder="请再次输入密码" minlength="6" maxlength="16">
+                                <p class="verif_msg"><span class="iconfont icon-shanchu"></span> <span class="err_msg"></span></p>
+                            </label>
+                            <button class="login-btn" type="submit">确认</button>
+                            <div class="treaty clearfix">
+                                <label class="treaty-label" for="treaty_2">
+                                    <input type="checkbox" id="treaty_2">
+                                    <p>阅读并接受<span class="ff6900">《三板导航协议》</span></a></p>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+        <script src="./js/jquery-1.11.3.js"></script>
+        <script src="./js/jquery.flexslider-min.js"></script>
+        <script>
+        $(function(){
+            $('#footer').load('./footer.html');
+            
+        })
+        </script>
+        <script src="./js/common.js"></script>
+    </body>
+
+</html>
